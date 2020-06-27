@@ -1,0 +1,15 @@
+{
+  "name": "twitter-tweets-scraper",
+  "version": "1.0.0",
+  "description": "To get all tweets from a particular twitter handle",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "Abdul Basit",
+  "license": "ISC",
+  "dependencies": {
+    "puppeteer": "^4.0.1"
+  }
+}

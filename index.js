@@ -1,0 +1,14 @@
+const puppeteer = require('puppeteer');
+
+console.log("Twitter Scraper");
+
+(async () => {
+    const browser = await puppeteer.launch(
+        {args: ['--no-sandbox', '--disable-setuid-sandbox']}
+    );
+    const page = await browser.newPage();
+    await page.goto('https://www.google.com/');
+    await page.screenshot({ path: 'google.png' });
+
+    await browser.close();
+})()
